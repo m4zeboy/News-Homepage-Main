@@ -1,0 +1,45 @@
+/* Designed by Moisés Silva de Azevedo, São Paulo. */
+
+header.wrap-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.wrap-navbar ul.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+nav.wrap-navbar ul.navbar-list li { 
+    color: var(--grayish-blue);
+    padding: 1rem;
+}
+nav.wrap-navbar ul.navbar-list li:hover a,
+.dialog-navbar-list li:hover a {
+    color: var(--soft-orange);
+}
+
+dialog#mobile-navigation {
+    left: auto;
+    min-height: 100vh;
+    max-width: 255px;
+    width: 100%;
+    padding: 1.6rem;
+    border: none;
+}
+dialog#mobile-navigation header.dialog-header {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 2rem;
+}
+.dialog-navbar-list li {
+    padding: .5rem 0;
+}
+.dialog-navbar-list li a {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+

@@ -1,0 +1,89 @@
+/* Designed by Moisés Silva de Azevedo, São Paulo. */
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+}
+@media (max-width: 1110px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+}
+section picture img {
+    width: 100%;
+}
+article {
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+article h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--very-dark-blue);
+}
+.text p  {
+    margin-bottom: 1.6rem;
+}
+@media (min-width: 1110px) {
+    article h1 {
+        font-size: 3.2rem;
+    }
+    section.highlight article, section.highlight article .text {
+        display: flex;
+        flex-direction: row;
+    }
+    section.highlight article .text {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+#news {
+    background-color: var(--very-dark-blue);
+    padding: 1.6rem;
+
+}
+#news h1 {
+    color: var(--soft-orange);
+}
+.story {
+    padding: 1.6rem 0;
+}
+.story strong  {
+    color: var(--off-white);
+}
+.story p  {
+    color: var(--grayish-blue);
+}
+section#topics {
+    margin-top: 4rem;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+@media (min-width: 1110px) {
+    section#topics {
+        flex-direction: row;
+    }
+}
+.topic {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.topic img {
+    height: 100px;
+}
+.topic .topic-text {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.topic .topic-text h2 {
+    color: var(--grayish-blue);
+}

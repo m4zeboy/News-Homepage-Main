@@ -1,0 +1,146 @@
+<!-- Designed by Moisés Silva de Azevedo, São Paulo. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="main.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <div class="container">
+      <header class="wrap-header">
+        <a href="#" class="glass"><img src="./assets/images/logo.svg" alt="Logo"></a>
+        <div class="mobile-only">
+          <button class="glass mobile-only" id="open-mobile-navigation" title="Button for open menu"><img
+              src="./assets/images/icon-menu.svg" alt="Icon for menu"></button>
+          <dialog id="mobile-navigation">
+            <header class="dialog-header">
+              <button class="glass" id="close-mobile-navigation" title="Button for close Menu"><img
+                  src="./assets/images/icon-menu-close.svg" alt="Icon for close menu"
+                  title="Icon for close menu"></button>
+            </header>
+            <main class="dialog-content">
+              <nav class="dialog-navbar">
+                <ul class="dialog-navbar-list">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#new">New</a></li>
+                  <li><a href="#popular">Popular</a></li>
+                  <li><a href="#trending">Trending</a></li>
+                  <li><a href="#categories">Categories</a></li>
+                </ul>
+              </nav>
+            </main>
+          </dialog>
+        </div>
+        <nav class="desktop-only wrap-navbar">
+          <ul class="navbar-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#new">New</a></li>
+            <li><a href="#popular">Popular</a></li>
+            <li><a href="#trending">Trending</a></li>
+            <li><a href="#categories">Categories</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="container">
+      <main class="wrap-content">
+        <div class="hero">
+          <section class="highlight">
+            <picture>
+              <source media="(min-width: 1110px)" srcset="./assets/images/image-web-3-desktop.jpg" sizes="">
+              <img src="./assets/images/image-web-3-mobile.jpg" alt="">
+            </picture>
+            <article>
+              <h1>The Bright Future of Web 3.0?</h1>
+              <div class="text">
+                <p>
+                  We dive into the next evolution of the web that claims to put the power of the platforms back into the
+                  hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <button class="primary">read more</button>
+              </div>
+            </article>
+          </section>
+          <aside id="news">
+            <h1>New</h1>
+
+            <div class="story">
+              <strong>Hydrogen VS Electric Cars</strong>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+
+            <hr noshade>
+            <div class="story">
+              <strong>The Downsides of AI Artistry</strong>
+              <p>What are the possible adverse effects of on-demand AI image generation?</p>
+            </div>
+            <hr noshade>
+            <div class="story">
+              <strong>Is VC Funding Drying Up?</strong>
+              <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+          </aside>
+        </div>
+        <section id="topics">
+          
+          <div class="topic">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="image retro pcs">
+            <div class="topic-text">  
+              <h2>01</h2>
+              <strong>Reviving Retro PCs</strong>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+
+          <div class="topic">
+            <img src="./assets/images/image-top-laptops.jpg" alt="image top laptops">
+            <div class="topic-text">
+              <h2>02</h2>
+              <strong>Top 10 Laptops of 2022</strong>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+
+          <div class="topic">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="image gaming growth">
+            <div class="topic-text">
+              <h2>03</h2>
+              <strong>The Growth of Gaming</strong>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="navigation.js"></script>
+</body>
+
+</html>
